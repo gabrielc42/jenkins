@@ -1,0 +1,30 @@
+pipeline {
+  agent any
+  stages {
+    stage("Stage 1"){
+      steps {
+        echo "this is Dream Land"
+      }
+    }
+    stage("Stage 2"){
+      steps {
+        echo "this is Temple"
+      }
+    }
+    stage("Stage 3"){
+      steps {
+        echo "this is Pokemon Stadium"
+      }
+    }
+    stage("Stage 4"){
+      steps {
+        echo "this is Fountain of Dreams"
+      }
+    }
+    stage("Stage 5"){
+      steps {
+        echo "this is Final Destination"
+      }
+    }
+  }
+}
