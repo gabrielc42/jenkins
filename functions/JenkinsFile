@@ -1,0 +1,23 @@
+pipeline {
+  agent any
+  environment {
+    def myNumber = 0
+  }
+  
+  stages {
+    stage("Demo") {
+      steps {
+        script {
+          def myOtherScope
+        }
+        // myNumber available here
+        myFunc("Hello from the demo stage!")
+      }
+    }
+  }
+}
+
+def myFunc(String myText) {
+  def myScope = myText
+  echo "myText is set to: ${myText}"
+}
